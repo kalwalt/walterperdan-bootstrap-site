@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import LangSwitcher from 'components/LangSwitcher'
 import logo from '../../../content/images/Walter_Perdan_visual_artist_logo.svg'
 
 class Navi extends React.Component {
@@ -7,9 +8,13 @@ class Navi extends React.Component {
     const { location, title } = this.props
     return (
       <div>
-        <Link className="text-center" to="/">
-          <img src={logo} alt="Walter Perdan logo" className="Logo" />
-        </Link>
+        <div>
+          <LangSwitcher />
+          <Link className="text-center" to="/">
+            <img src={logo} alt="Walter Perdan logo" className="Logo" />
+          </Link>
+          <p className="text-left">Walter Perdan visual artist</p>
+        </div>
         <nav className="navbar navbar-expand navbar-dark flex-column flex-md-row bg-primary">
           <div className="container">
             <Link className="text-center" to="/">
