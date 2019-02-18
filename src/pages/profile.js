@@ -8,7 +8,7 @@ import Layout from 'components/Layout'
 import Meta from 'components/Meta'
 import Icon from 'components/Icon'
 
-class Profile extends React.Component {
+class profile extends React.Component {
   render() {
     const { location, data } = this.props
     const profile = get(data, 'profile.childImageSharp.fixed')
@@ -24,16 +24,16 @@ class Profile extends React.Component {
           <section className="text-center">
             <div className="container">
               <Img fixed={profile} className="rounded-circle" />
-              <h1>jaxx2104</h1>
+              <h1>kalwalt</h1>
               <p className="lead text-muted">Front-end engineer.</p>
               <div>
                 <a
                   ref="twButton"
-                  href="https://twitter.com/jaxx2104"
+                  href="https://twitter.com/kalwalt"
                   className="twitter-follow-button"
                   data-show-count="false"
                 >
-                  Follow @jaxx2104
+                  Follow @kalwalt
                 </a>
               </div>
             </div>
@@ -160,7 +160,7 @@ class Profile extends React.Component {
   }
 }
 
-export default Profile
+export default profile
 
 export const query = graphql`
   query ProfilePageQuery {
