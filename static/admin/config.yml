@@ -10,7 +10,7 @@ publish_mode: editorial_workflow # Enable drafts
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "content/blog"
+    folder: "content/blog/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
